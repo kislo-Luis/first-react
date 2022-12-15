@@ -7,11 +7,27 @@ function App() {
 
     <div >
      
+     
      <NavBar/>
+
+     
      
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
 

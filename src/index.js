@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './components/pages/Home';
+import Profile from './components/pages/Profile';
 
 
  const router = createBrowserRouter(
@@ -14,7 +14,7 @@ import Home from './components/pages/Home';
     element:<App/>,
     children:[ {
         path:'perfil',
-        element:<Home />
+        element:<Profile />
         }
     ]
 

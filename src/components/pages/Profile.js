@@ -1,8 +1,21 @@
 import React from 'react'
+import { Button } from 'reactstrap'
+
+
 
 const Profile = () => {
   return (
-    <div><p>Profile Screen</p></div>
+    <div>
+
+     
+  <Button 
+  color="primary"
+  >
+    Profile
+  </Button>
+     
+
+    </div>
   )
 }
 

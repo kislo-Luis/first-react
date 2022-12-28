@@ -14,12 +14,13 @@ function NavBar(args) {
   return (
     <div>
       
-      <Navbar {...args}>
+      
+      <Navbar className="my-2" color="dark" dark {...args}>
 
           <Link to="/"> <img alt="logo" src="/logo192.png"style={{height: 80,width: 80}}/>Isotopos Web </Link>
           
 
-          {/* <Link to="/home" > <Home/>  </Link>    */}
+          
           
         
           <Link to="perfil"> <img alt="logo" src="/UserAvatar.png"style={{height: 40,width: 40}}/> </Link>

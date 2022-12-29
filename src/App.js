@@ -1,20 +1,7 @@
-
-import React from 'react';
-import  Example  from './components/navigation/NavBar';
-
-
+import React from "react";
 
 function App() {
-
-  return (
-    
-
-      
-      <div></div>
-     
-   
-
-  );
+  return <div></div>;
 }
 
 export default App;

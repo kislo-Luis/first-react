@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Profile from './components/pages/Profile';
+import Menu from './components/pages/Menu';
 
 
  const router = createBrowserRouter(
@@ -13,8 +14,15 @@ import Profile from './components/pages/Profile';
     path:'/',
     element:<App/>,
     children:[ {
-        path:'perfil',
-        element:<Profile />
+
+            path:'perfil',
+            element:<Profile />
+
+        },
+
+        {
+            path:'menu',
+            element:<Menu /> 
         }
     ]
 

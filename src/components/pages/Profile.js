@@ -8,11 +8,17 @@ const Profile = () => {
     <div>
 
      
-  <Button 
-  color="primary"
-  >
-    Profile
-  </Button>
+        <Button 
+        color="primary"
+        >
+          Profile
+        </Button>
+
+        
+
+
+
+
      
 
     </div>

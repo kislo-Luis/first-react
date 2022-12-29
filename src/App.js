@@ -17,7 +17,8 @@ function App() {
     
 
           <NavBar/>
-          <div><Outlet /></div>
+          
+          <div> <Outlet /></div>
 
 
 

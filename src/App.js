@@ -1,33 +1,12 @@
-import React from 'react';
-import NavBar from './components/navigation/NavBar'
-
+import React from "react";
+import NavBar from "./components/navigation/NavBar";
 
 function App() {
   return (
-
-    <div >
-     
-     
-     <NavBar/>
-
-     
-     
+    <div>
+      <NavBar />
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

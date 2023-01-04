@@ -1,28 +1,10 @@
-import React from 'react'
-import { Button } from 'reactstrap'
+import { Button } from "reactstrap";
+import React from "react";
 
-
-
-const Profile = () => {
+export const Profile = () => {
   return (
     <div>
-
-     
-        <Button 
-        color="primary"
-        >
-          Profile
-        </Button>
-
-        
-
-
-
-
-     
-
+      <Button color="primary">Profile</Button>
     </div>
-  )
-}
-
-export default Profile
+  );
+};

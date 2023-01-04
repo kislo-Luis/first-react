@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -7,11 +7,10 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
+} from "reactstrap";
 
-function Menu(props) {
+export const Menu = () => {
   const [collapsed, setCollapsed] = useState(true);
-
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
@@ -27,15 +26,11 @@ function Menu(props) {
               <NavLink href="/perfil/">Perfil</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">
-                Atras
-              </NavLink>
+              <NavLink href="/">Atras</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </div>
   );
-}
-
-export default Menu;
+};

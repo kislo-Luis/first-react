@@ -16,14 +16,17 @@ export const Menu = () => {
   return (
     <div>
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="me-auto">
+        <NavbarBrand href="/menu" className="me-auto">
           Menu
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/perfil/">Perfil</NavLink>
+              <NavLink href="/home">Inicio</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/perfil">Perfil</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/">Atras</NavLink>

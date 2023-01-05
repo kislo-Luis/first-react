@@ -6,7 +6,7 @@ export const NavBar = () => {
   return (
     <div>
       <NavbarReacstrap className="my-2" color="dark" dark>
-        <Link to="/">
+        <Link to="/home">
           <img
             alt="logo"
             src="/logo192.png"

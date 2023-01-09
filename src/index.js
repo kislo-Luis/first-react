@@ -3,6 +3,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Profile } from "./components/pages/Profile";
 import { Menu } from "./components/pages/Menu";
+import { Home} from "./components/pages/Home";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,15 @@ const router = createBrowserRouter([
         path: "menu",
         element: <Menu />,
       },
+
+      {
+        path: "home",
+        element: <Home />,
+      },
+
+      
+
+      
     ],
   },
 ]);

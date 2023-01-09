@@ -1,10 +1,13 @@
 import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import React from "react";
 
 export const Profile = () => {
   return (
     <div>
-      <Button color="primary">Profile</Button>
+      <Link to='/home'>
+        <Button color="primary">Ingresar sin iniciar sesión</Button>
+      </Link>
     </div>
   );
 };

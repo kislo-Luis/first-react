@@ -1,4 +1,4 @@
-let cardArr = [
+const cardArr = [
   {
     id: 1,
     title: "Isotopos de Springfield",

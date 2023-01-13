@@ -5,7 +5,7 @@ import { Navbar as NavbarReacstrap } from "reactstrap";
 export const NavBar = () => {
   return (
     <div>
-      <NavbarReacstrap className="my-2" color="dark" dark>
+      <NavbarReacstrap  color="dark" dark>
         <Link to="/home">
           <img
             alt="logo"

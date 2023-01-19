@@ -1,11 +1,9 @@
-import { CardJsx } from "../components/card/Card";
-import { Link } from "react-router-dom";
+import { Card } from "../components/card/Card";
+
 export const Home = () => {
   return (
     <div>
-      <Link to="/card">
-        <CardJsx />
-      </Link>
+      <Card />
     </div>
   );
 };

@@ -1,16 +1,16 @@
 import {
   Button,
-  Card,
+  Card as CardComp,
   CardText,
   CardSubtitle,
   CardTitle,
   CardBody,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-export const Home = () => {
+export const Card = () => {
   return (
     <div>
-      <Card
+      <CardComp
         color="primary"
         style={{
           width: "18rem",
@@ -30,7 +30,7 @@ export const Home = () => {
             <Button color="dark"> Leer más... </Button>
           </Link>
         </CardBody>
-      </Card>
+      </CardComp>
 
       <Link to="/menu">
         <Button color="primary"> Atras </Button>

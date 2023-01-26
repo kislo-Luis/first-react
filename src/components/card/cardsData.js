@@ -1,9 +1,10 @@
-const cardArr = [
+
+export const cardsData =  [
   {
     id: 1,
     title: "Isotopos de Springfield",
     content: 'Los Isotopos de Springfield son un equipo de béisbol profesional en el que ha jugado Bart Simpson en algunos episodios.',
-    img: src="https://picsum.photos/300/200",
+    img: "https://picsum.photos/300/200",
   },
   {
     id: 2,
@@ -35,4 +36,7 @@ const cardArr = [
     content: "El conjunto más estrategico del campeonato, siempre suma puntos.",
     img:"https://picsum.photos/300/200",
   },
-];
+]
+
+
+

@@ -1,13 +1,32 @@
-import { Button } from "reactstrap";
-import { Link } from "react-router-dom";
 import React from "react";
+import { Card } from "../components/card/Card";
+import {cardsData} from '../components/card/cardsData'
 
-export const Profile = () => {
+
+
+
+
+
+export const Profile = (props) => {
   return (
     <div>
-      <Link to='/home'>
-        <Button color="primary">Ingresar sin iniciar sesión</Button>
-      </Link>
+      
+       { cardsData.map(data =>(
+          <Card
+          key={data.id}
+          title={data.title}
+          content={data.content}
+          img={data.img}
+          />
+
+
+       ))}
+     
+          
+      
+      
+      
+       
     </div>
   );
 };

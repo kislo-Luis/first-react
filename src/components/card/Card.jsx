@@ -7,7 +7,7 @@ import {
   CardBody,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-export const Card = () => {
+export const Card = (props) => {
   return (
     <div>
       <CardComp
@@ -16,15 +16,14 @@ export const Card = () => {
           width: "18rem",
         }}
       >
-        <img alt="Sample" src="/isotopes.png" />
+        <img alt="Sample" src={props.img} />
         <CardBody>
-          <CardTitle tag="h5">Isotopos de Springfield</CardTitle>
+          <CardTitle tag="h5">{props.title}</CardTitle>
           <CardSubtitle className="mb-2 text-muted" tag="h6">
             ...de albuquerque?
           </CardSubtitle>
           <CardText>
-            Los Isotopos de Springfield son un equipo de béisbol profesional en
-            el que ha jugado Bart Simpson en algunos episodios.
+            {props.content}
           </CardText>
           <Link to="#">
             <Button color="dark"> Leer más... </Button>

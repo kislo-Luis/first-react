@@ -8,8 +8,14 @@ import { Home } from "./pages/Home";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />, 
+   
     children: [
+      {
+        path: "home",
+        element: <Home />,
+      },
+
       {
         path: "perfil",
         element: <Profile />,
@@ -19,11 +25,7 @@ const router = createBrowserRouter([
         path: "menu",
         element: <Menu />,
       },
-
-      {
-        path: "home",
-        element: <Home />,
-      },
+      
     ],
   },
 ]);

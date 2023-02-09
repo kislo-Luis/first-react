@@ -1,11 +1,11 @@
-import { Button } from "reactstrap";
+import { NavbarBrand } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Navbar as NavbarReacstrap } from "reactstrap";
 
 export const NavBar = () => {
   return (
     <div>
-      <NavbarReacstrap  color="dark" dark>
+      <NavbarReacstrap color="dark" dark>
         <Link to="/home">
           <img
             alt="logo"
@@ -15,9 +15,9 @@ export const NavBar = () => {
           Isotopos Web
         </Link>
 
-        <Link to="/menu">
-          <Button color="primary"> Menu </Button>
-        </Link>
+        <NavbarBrand href="/home">Productos</NavbarBrand>
+        <NavbarBrand href="/perfil">Nosotros</NavbarBrand>
+        <NavbarBrand href="/perfil">Contacto</NavbarBrand>
 
         <Link to="perfil">
           <img

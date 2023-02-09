@@ -5,8 +5,9 @@ import {
   CardSubtitle,
   CardTitle,
   CardBody,
+  NavLink,
 } from "reactstrap";
-import { Link } from "react-router-dom";
+
 export const Card = (props) => {
   return (
     <div>
@@ -19,19 +20,14 @@ export const Card = (props) => {
         <img alt="Sample" src={props.img} />
         <CardBody>
           <CardTitle tag="h5">{props.title}</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            ...de albuquerque?
-          </CardSubtitle>
-          <CardText>
-            {props.content}
-          </CardText>
-          <Link to="#">
+          <CardSubtitle className="mb-2 text-muted" tag="h6"></CardSubtitle>
+          <CardText>{props.content}</CardText>
+
+          <NavLink href="https://github.com/reactstrap/reactstrap">
             <Button color="dark"> Leer más... </Button>
-          </Link>
+          </NavLink>
         </CardBody>
       </CardComp>
-
-      
     </div>
   );
 };

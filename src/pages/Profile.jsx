@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button } from "reactstrap";
+import "./profile.css";
 
 export const Profile = () => {
   return (
-    <div>
-      <Link to="/">
+    <div className="buttom">
+      <div className="back">
+      <NavLink to="/">
         <Button>Atras</Button>
-      </Link>
+      </NavLink>
+      </div>
     </div>
   );
 };

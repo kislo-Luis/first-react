@@ -1,8 +1,12 @@
-.cards-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr  ;
-    gap: 15px;
-    margin: 15px;
-    
-    
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px 150px;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }

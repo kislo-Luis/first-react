@@ -6,7 +6,7 @@
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 150px 150px;
+  gap: 65px 150px;
   margin-top: 65px;
   margin-bottom: 65px;
 }

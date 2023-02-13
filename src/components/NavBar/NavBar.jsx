@@ -1,31 +1,31 @@
-import { Button } from "reactstrap";
-import { Link } from "react-router-dom";
+import { NavbarBrand } from "reactstrap";
+import { NavLink } from "react-router-dom";
 import { Navbar as NavbarReacstrap } from "reactstrap";
 
 export const NavBar = () => {
   return (
     <div>
-      <NavbarReacstrap  color="dark" dark>
-        <Link to="/home">
+      <NavbarReacstrap color="dark" dark>
+        <NavLink to="/home">
           <img
             alt="logo"
             src="/logo192.png"
             style={{ height: 80, width: 80 }}
           />
           Isotopos Web
-        </Link>
+        </NavLink>
 
-        <Link to="/menu">
-          <Button color="primary"> Menu </Button>
-        </Link>
+        <NavbarBrand href="/home">Productos</NavbarBrand>
+        <NavbarBrand href="/perfil">Nosotros</NavbarBrand>
+        <NavbarBrand href="/perfil">Contacto</NavbarBrand>
 
-        <Link to="perfil">
+        <NavLink to="perfil">
           <img
             alt="logo"
             src="/UserAvatar.png"
             style={{ height: 40, width: 40 }}
           />
-        </Link>
+        </NavLink>
       </NavbarReacstrap>
     </div>
   );

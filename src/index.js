@@ -2,7 +2,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Profile } from "./pages/Profile";
-import { Menu } from "./pages/Menu";
 import { Home } from "./pages/Home";
 
 const router = createBrowserRouter([
@@ -20,12 +19,6 @@ const router = createBrowserRouter([
         path: "perfil",
         element: <Profile />,
       },
-
-      {
-        path: "menu",
-        element: <Menu />,
-      },
-      
     ],
   },
 ]);

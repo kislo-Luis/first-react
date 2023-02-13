@@ -31,9 +31,7 @@ export const Card = (props) => {
         </CardBody>
       </CardComp>
 
-      <Link to="/menu">
-        <Button color="primary"> Atras </Button>
-      </Link>
+      
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import { NavbarBrand } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { Navbar as NavbarReacstrap } from "reactstrap";
 
@@ -15,9 +14,9 @@ export const NavBar = () => {
           Isotopos Web
         </NavLink>
 
-        <NavbarBrand href="/home">Productos</NavbarBrand>
-        <NavbarBrand href="/perfil">Nosotros</NavbarBrand>
-        <NavbarBrand href="/perfil">Contacto</NavbarBrand>
+        <NavLink to="home">Productos</NavLink>
+        <NavLink to="perfil">Nosotros</NavLink>
+        <NavLink to="perfil">Contacto</NavLink>
 
         <NavLink to="perfil">
           <img

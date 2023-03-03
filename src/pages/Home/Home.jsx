@@ -1,20 +1,35 @@
 import React from "react";
 import { Card } from "../../components/card/Card";
-import { cardsData } from "../../components/card/cardsData";
-import './Home.css';
+import { useState, useEffect } from "react";
+import axios from "axios";
+import "./Home.css";
+
 export const Home = () => {
+  const [actores, setListadoActores] = useState([]);
+
+  useEffect(() => {
+    const obtenerPersonajes = async () => {
+      const url = "https://rickandmortyapi.com/api/character";
+      const result = await axios.get(url);
+      setListadoActores(result.data.results);
+    };
+    obtenerPersonajes();
+  }, []);
+  console.log(actores);
+
   return (
     <div className="grid">
-    <div className="cards-grid">
-      {cardsData.map((data) => (
-        <Card
-          key={data.id}
-          title={data.title}
-          content={data.content}
-          img={data.img}
-        />
-      ))}
-    </div>
+      <div className="cards-grid">
+        {actores.map((data, i) => (
+          <Card
+            key={data.id}
+            title={data.name}
+            subtitle={data.status}
+            content={data.species}
+            img={data.image}
+          />
+        ))}
+      </div>
     </div>
   );
 };
